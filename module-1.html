@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to Programming — Learning Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <!-- ============ SPINE / NAV ============
+       Copy this whole block onto every page. Only change which <li> has
+       class="is-current", and add a new <li> here whenever you add a module. -->
+  <aside class="spine">
+    <p class="spine__mark">Your Name<span>.</span></p>
+    <p class="spine__role">BSc Course Name — Learning Portfolio</p>
+
+    <nav aria-label="Portfolio navigation">
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+      </ul>
+
+      <p class="spine__section-label">Modules</p>
+      <ul>
+        <li>
+          <a href="module-1.html" class="is-current">
+            Introduction to Programming
+            <span class="spine__module-code">CODE101 · Year 1</span>
+          </a>
+        </li>
+        <li>
+          <a href="module-template.html">
+            + Duplicate module-template.html for each new module
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- ============ END SPINE ============ -->
+
+  <main class="page">
+    <div class="page__inner">
+
+      <div class="module-header">
+        <p class="code">CODE101 · Term 1, Year 1</p>
+        <h1>Introduction to Programming</h1>
+        <p class="lede">
+          A first module on procedural and object-oriented programming, assessed
+          through weekly labs, a paired coursework project, and a written exam.
+        </p>
+      </div>
+
+      <!-- 1. LEARNING OUTCOMES ================================================= -->
+      <section id="outcomes">
+        <div class="section-heading">
+          <h2>Learning outcomes</h2>
+          <span class="hint">as set by the module</span>
+        </div>
+        <ol class="outcome-list">
+          <li>Design and implement simple programs using variables, control flow, and functions.</li>
+          <li>Apply basic object-oriented principles to structure a small codebase.</li>
+          <li>Test and debug code systematically, and explain design decisions to others.</li>
+        </ol>
+      </section>
+
+      <!-- 2. ARTEFACTS ========================================================== -->
+      <section id="artefacts">
+        <div class="section-heading">
+          <h2>Artefacts</h2>
+          <span class="hint">what you produced, and the feedback it received</span>
+        </div>
+        <div class="artefact-grid">
+
+          <article class="artefact-card">
+            <h3>Library catalogue CLI</h3>
+            <p class="desc">
+              A command-line tool for adding, searching, and checking out books, built
+              in pairs as the main coursework piece.
+              <a href="https://github.com/yourusername/library-cli">View on GitHub</a>
+            </p>
+            <div class="feedback">
+              <span class="who">Feedback — Module tutor</span>
+              Clean separation between the data layer and the CLI, but error handling
+              on bad input was inconsistent.
+            </div>
+          </article>
+
+          <article class="artefact-card">
+            <h3>Weekly lab exercises</h3>
+            <p class="desc">
+              Ten short exercises covering loops, functions, and simple data structures,
+              submitted individually each week.
+            </p>
+            <div class="feedback">
+              <span class="who">Feedback — Lab demonstrator</span>
+              Solid grasp of control flow by week 4; encouraged to write more tests
+              before checking answers against expected output.
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3. REFLECTIVE PIECE =================================================== -->
+      <section id="reflection">
+        <div class="section-heading">
+          <h2>Reflection</h2>
+          <span class="hint">what did I actually learn, and how?</span>
+        </div>
+        <div class="reflection">
+          <p>
+            The biggest shift this module was learning to break a problem down before
+            writing any code — the first two lab exercises I attempted directly in the
+            editor took far longer than the ones I sketched out on paper first.
+            Pairing on the coursework also showed me how differently two people can
+            structure the same problem, which was uncomfortable at first but pushed me
+            to justify decisions I'd normally make on autopilot.
+          </p>
+          <p>
+            The tutor's feedback on error handling was the most useful correction I
+            received: I'd been coding for the "happy path" and not thinking about what
+            a user could do wrong. Going into the next module, I want to write at least
+            one deliberately-broken test case before I consider a function finished.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4. MEETING NOTES ====================================================== -->
+      <section id="meetings">
+        <div class="section-heading">
+          <h2>Meeting notes</h2>
+          <span class="hint">team and tutor meetings, where applicable</span>
+        </div>
+
+        <div class="log-entry">
+          <div class="log-entry__meta">
+            <span class="date">Oct 14, 2025</span>
+            <span>With: coursework partner</span>
+          </div>
+          <ul>
+            <li>Agreed to split the catalogue CLI into a data module and a command-handling module.</li>
+            <li>Action: each write one module independently, compare interfaces before merging.</li>
+          </ul>
+        </div>
+
+        <div class="log-entry">
+          <div class="log-entry__meta">
+            <span class="date">Nov 3, 2025</span>
+            <span>With: module tutor</span>
+          </div>
+          <ul>
+            <li>Reviewed progress on the coursework ahead of submission.</li>
+            <li>Flagged missing input validation on the search command.</li>
+            <li>Action: add validation and a short test file before the deadline.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. PROFESSIONAL SKILLS MATRIX + ACTION PLAN ========================== -->
+      <section id="skills">
+        <div class="section-heading">
+          <h2>Professional skills</h2>
+          <span class="hint">gained or enhanced this module, and how to use them</span>
+        </div>
+
+        <table class="skills-matrix">
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Evidence</th>
+              <th>Confidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Problem decomposition</td>
+              <td>Sketching lab exercises on paper before coding, from week 3 onward</td>
+              <td>
+                <span class="rating" aria-label="3 out of 5">
+                  <i class="filled"></i><i class="filled"></i><i class="filled"></i><i></i><i></i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Working in a pair</td>
+              <td>Coursework project — agreeing interfaces before writing code</td>
+              <td>
+                <span class="rating" aria-label="3 out of 5">
+                  <i class="filled"></i><i class="filled"></i><i class="filled"></i><i></i><i></i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Defensive coding / input validation</td>
+              <td>Tutor feedback on the CLI's search command</td>
+              <td>
+                <span class="rating" aria-label="2 out of 5">
+                  <i class="filled"></i><i class="filled"></i><i></i><i></i><i></i>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="action-plan">
+          <h3>Action plan</h3>
+          <ul>
+            <li>Write a failing test case before considering any function finished, starting with next module's coursework.</li>
+            <li>Keep sketching problems on paper before opening the editor, especially for anything with more than two conditional branches.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>Last updated: November 2025</span>
+        <span><a href="index.html">← Back to About Me</a></span>
+      </footer>
+
+    </div>
+  </main>
+</div>
+</body>
+</html>
